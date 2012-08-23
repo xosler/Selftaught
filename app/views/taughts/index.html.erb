@@ -1,0 +1,27 @@
+<h1>Listing taughts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Owner</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @taughts.each do |taught| %>
+  <tr>
+    <td><%= taught.name %></td>
+    <td><%= taught.description %></td>
+    <td><%= taught.user.username %></td>
+    <td><%= link_to 'Show', taught %></td>
+    <td><%= link_to 'Edit', edit_taught_path(taught) %></td>
+    <td><%= link_to 'Destroy', taught, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Taught', new_taught_path %>

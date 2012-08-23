@@ -1,0 +1,11 @@
+class CreateToughts < ActiveRecord::Migration
+  def change
+    create_table :toughts do |t|
+      t.string :name
+      t.text :description
+      t.User :owner
+
+      t.timestamps
+    end
+  end
+end
