@@ -16,5 +16,5 @@
     <%= f.label :password_confirmation, "Confirm Password" %>
     <%= f.password_field :password_confirmation %>
   </p>
-  <p><input type="submit" value="<%= @user.new_record? ? "Sign up" : "Update" %>" class="btn btn-primary"/></p>
+  <p><input type="submit" value="<%= @user.new_record? ? "Sign up" : "Update" %>" class="btn btn-promary"/></p>
 <% end %>

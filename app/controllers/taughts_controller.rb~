@@ -2,7 +2,7 @@ class TaughtsController < ApplicationController
   # GET /taughts
   # GET /taughts.json
   def index
-    @taughts = current_user.taughts
+    @taughts = Taught.all
 
     respond_to do |format|
       format.html # index.html.erb

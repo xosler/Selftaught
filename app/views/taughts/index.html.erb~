@@ -1,10 +1,9 @@
 <h1>Listing taughts</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Name</th>
     <th>Description</th>
-    <th>User</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,10 +13,9 @@
   <tr>
     <td><%= taught.name %></td>
     <td><%= taught.description %></td>
-    <td><%= taught.user.username %></td>
     <td><%= link_to 'Show', taught %></td>
     <td><%= link_to 'Edit', edit_taught_path(taught) %></td>
-    <td><%= link_to 'Destroy', taught, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', taught, :method => :destroy %></td>
   </tr>
 <% end %>
 </table>

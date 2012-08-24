@@ -1,0 +1,16 @@
+class MainController < ApplicationController
+	before_filter :login_required, :only => [:home]
+	
+	
+	def index
+		if logged_in?
+			render :action => 'home'
+		end
+	end
+	
+	
+	def home
+	
+	end
+
+end

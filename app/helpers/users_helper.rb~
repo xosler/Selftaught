@@ -1,0 +1,8 @@
+module UsersHelper
+
+  def logged_user
+  	id = session[:user_id]
+	return User.find(id) if id
+  end
+  
+end

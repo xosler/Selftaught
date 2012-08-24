@@ -12,11 +12,10 @@
 
 <p>
   <b>User:</b>
-  <%= @taught.user_id %>
+  <%= link_to @taught.user.username, @taught.user %>
 </p>
 
 
 <%= link_to 'Edit', edit_taught_path(@taught) %> |
 <%= link_to 'Back', taughts_path %>
 
-<%= @taught.user %>
