@@ -1,5 +1,4 @@
 <% title "Editing taught "+@taught.name %>
-<h1>Editing taught <%= @taught.name %></h1>
 
 <%= render 'form' %>
 

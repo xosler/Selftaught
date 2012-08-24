@@ -1,5 +1,4 @@
 <div class="well">
 	index page
-	<%= @user.username %>
 	
 </div>
